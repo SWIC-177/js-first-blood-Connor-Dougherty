@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <input type="text" id="age" value="your age">
-    <input type="text" id="adult" value="(y or n)">
-    <input type="button" onclick="checkAge()" value="submit">
-<p id="answer"></p>
-<script>
-var age = document.getElementById("age").innerHTML;
-var adult = document.getElementById("adult").innerHTML;
-var result = document.getElementById("answer").innerHTML;
-var oldEnough = false;
-function checkAge(){
-    if(age.value >= 18){
-        oldEnough = true;
-    }
-    else{
-        oldEnough = false;
-    }
-    if(oldEnough == false){
-        if(adult.value == "y"){
-            result = "You are not old enough, but have an adult with you.";
-        }
-        else{
-            result = "You are not old enough and are unaccompanied."
-        }
-    }
-    else{
-        result = "You are old enough."
-    }
+<header>
+<title>Check age 9-1</title>
+
+<script type="text/javascript">
+var ageCheck = window.prompt("Please enter your age:")
+var name = window.prompt("Please enter your name:")
+
+if (ageCheck < 18) {
+    window.alert("you submited that you are" + ageCheck + ": years old," + name + ".");
+    window.alert("you must be atleast 18 years old to enter this site!");
 }
+    else if (ageCheck > 18 && ageCheck < 101 ) {
+        window.alert("you are old enough to enter this website!.");
+        window.alert("Welcome " + name + "!");
+    }
+else {
+    window.alert("You must be honest about your age, " + name + ".");
+{
+
+    
 </script>
+</header>
+<body>
+</body>
 </html>
