@@ -30,7 +30,7 @@ const people = [
       age: 67,
     },
   ];
-  // my work vvvvvv
+  
   function renameOdds(p) {
     const oddName = [...p]
     for (let i = 0; i < oddName.length; i += 1) {

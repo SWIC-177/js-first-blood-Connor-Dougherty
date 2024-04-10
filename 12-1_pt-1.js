@@ -9,7 +9,7 @@ const person = {
     },
   };
   
-  
+  // my work vvvvvv
   const otherPerson = { ...person, hobbies: ["drawing"]};
   
   otherPerson.name = "Jane Doe";
